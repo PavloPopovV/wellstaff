@@ -1,0 +1,86 @@
+@font-face {
+	font-family: 'Tektur';
+	src: url('../fonts/Tektur-Bold.eot');
+	src: local('☺'), url('../fonts/Tektur-Bold.woff') format('woff'), url('../fonts/Tektur-Bold.ttf') format('truetype'), url('../fonts/Tektur-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Tektur';
+	src: url('../fonts/Tektur-ExtraBold.eot');
+	src: local('☺'), url('../fonts/Tektur-ExtraBold.woff') format('woff'), url('../fonts/Tektur-ExtraBold.ttf') format('truetype'), url('../fonts/Tektur-ExtraBold.svg') format('svg');
+	font-weight: 800;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Tektur';
+	src: url('../fonts/Tektur-Regular.eot');
+	src: local('☺'), url('../fonts/Tektur-Regular.woff') format('woff'), url('../fonts/Tektur-Regular.ttf') format('truetype'), url('../fonts/Tektur-Regular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+body {
+    box-sizing: border-box;
+    font-family: 'Tektur';
+}
+.container{
+    padding: 0;
+    max-width: 1105px;
+    margin: 0 auto;
+}
+.header_lang{
+    display: flex;
+    justify-content: space-between;
+    max-width: 419px;
+    padding-top: 50px;
+    margin:0 auto 100px;
+}
+.lang{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 51px;
+    letter-spacing: 0.075em;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+.lang:focus{
+    border-bottom: 1px solid #000;
+}
+.cookies_info{
+    margin-bottom: 55px;
+}
+.cookies_title{
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 78px ;
+    letter-spacing: 0.075em;
+    margin-bottom: 100px;
+}
+.cookies_text,
+.cookies_markers {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 35px;
+    letter-spacing: 0.075em;
+}
+
+@media(max-width:740px){
+    .header_lang{
+        width: 150px;
+        margin:0 auto 55px;
+    }
+    .lang{
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .cookies_title{
+        font-size: 30px;
+        margin-bottom: 55px;
+    }
+    .cookies_text, 
+    .cookies_markers{
+        font-size: 15px;
+        line-height: 21px;
+    }
+}

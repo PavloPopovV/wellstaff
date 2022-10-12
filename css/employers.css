@@ -1,0 +1,773 @@
+@font-face {
+    font-family: 'Tektur';
+    src: url('../fonts/Tektur-Black.eot');
+    src: local('☺'), url('../fonts/Tektur-Black.woff') format('woff'), url('../fonts/Tektur-Black.ttf') format('truetype'), url('../fonts/Tektur-Black.svg') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tektur';
+    src: url('../fonts/Tektur-Bold.eot');
+    src: local('☺'), url('../fonts/Tektur-Bold.woff') format('woff'), url('../fonts/Tektur-Bold.ttf') format('truetype'), url('../fonts/Tektur-Bold.svg') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tektur';
+    src: url('../fonts/Tektur-ExtraBold.eot');
+    src: local('☺'), url('../fonts/Tektur-ExtraBold.woff') format('woff'), url('../fonts/Tektur-ExtraBold.ttf') format('truetype'), url('../fonts/Tektur-ExtraBold.svg') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tektur';
+    src: url('../fonts/Tektur-Medium.eot');
+    src: local('☺'), url('../fonts/Tektur-Medium.woff') format('woff'), url('../fonts/Tektur-Medium.ttf') format('truetype'), url('../fonts/Tektur-Medium.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tektur';
+    src: url('../fonts/Tektur-Regular.eot');
+    src: local('☺'), url('../fonts/Tektur-Regular.woff') format('woff'), url('../fonts/Tektur-Regular.ttf') format('truetype'), url('../fonts/Tektur-Regular.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tektur';
+    src: url('../fonts/Tektur-SemiBold.eot');
+    src: local('☺'), url('../fonts/Tektur-SemiBold.woff') format('woff'), url('../fonts/Tektur-SemiBold.ttf') format('truetype'), url('../fonts/Tektur-SemiBold.svg') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+ul,
+ol {
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+a,
+button:focus {
+    outline: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    border: inset;
+    -webkit-appearance: none;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(90deg, #000C14 70.03%, #0A1F26 97.19%);
+    font-family: 'Tektur';
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: 0.075em;
+    color: #fff;
+}
+
+.employers_header {
+    min-height: 100vh;
+    background-image: url(../images/employers_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 50px 0 135px;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.blog_header {
+    min-height: 100vh;
+    background-image: url(../images/blog_bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 50px 0 135px;
+}
+
+.languages {
+    max-width: 420px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 70px;
+}
+
+.languages_button {
+    text-transform: uppercase;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+    font-size: 36px;
+    color: #FFFFFF;
+    border-bottom: 1px solid transparent;
+}
+
+.languages_button:focus {
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.header_title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 100px;
+}
+
+.header_agency-name {
+    text-align: center;
+    font-weight: 800;
+    font-size: 90px;
+}
+
+.header_text-info {
+    text-align: center;
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 60px;
+}
+
+.menu {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.menu_list {
+    max-width: 1170px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 75px;
+}
+
+.menu_button {
+    width: 268px;
+    height: 91px;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    border: 2px solid #4FC3E3;
+    border-radius: 20px;
+}
+
+.menu_button:hover {
+    background: rgba(83, 83, 83, 0.3);
+    backdrop-filter: blur(4.5px);
+}
+
+.main {
+    border: 2px solid #0072AA;
+    border-radius: 73px;
+}
+
+.main:hover {
+    text-shadow: 0px 0px 12px #fff;
+}
+
+.menu_item:last-child {
+    margin-top: 30px;
+}
+
+.job_box_text {
+    position: relative;
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.job_offers {
+    font-weight: 900;
+    font-size: 90px;
+    margin-right: 80px;
+}
+
+.check_jobs {
+    position: relative;
+    padding-top: 57px;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.check_jobs::before {
+    content: '';
+    position: absolute;
+    left: 120px;
+    top: 6px;
+    width: 127px;
+    height: 127px;
+    border: 1px solid #00CB9E;
+    border-radius: 50%;
+}
+
+.check_jobs::after {
+    position: absolute;
+    left: 25px;
+    top: 85px;
+    width: 125px;
+    height: 10px;
+    content: '';
+    background-image: url(../images/arrow_job.svg);
+    background-repeat: no-repeat;
+}
+
+.jobs_span {
+    color: #1CFDBE;
+}
+
+/* ------------------------------------------------------------ */
+.jobs_info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.title {
+    position: relative;
+    font-weight: 600;
+    font-size: 66px;
+    z-index: 1;
+    
+}
+
+.media_icon {
+    position: relative;
+    width: 91px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.media_icon::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 125px;
+    background: #fff;
+    right: 131px;
+}
+
+.employ_title_inner {
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 141px;
+
+    margin-bottom: 15px;
+}
+
+.employ_text {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 37px;
+    max-width: 855px;
+    margin-bottom: 30px;
+}
+
+.employ_order {
+    width: 570px;
+    margin-bottom: 60px;
+    background-image: url(https://i.gifer.com/51Ry.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 140px;
+}
+
+.employ_order_title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 51px;
+    margin-bottom: 30px;
+}
+
+.employ_order_input {
+    width: 550px;
+    height: 80px;
+    margin-bottom: 30px;
+    background: none;
+    outline: none;
+    border: 1px solid #E1E1E1;
+    border-radius: 20px;
+    color: rgba(255, 255, 255, 0.74);
+    padding: 22px 0 20px 17px;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 37px;
+}
+
+.employ_order_submit {
+    margin: 25px auto 0;
+    display: block;
+    padding: 14px 58px;
+    border: 1px solid rgba(255, 255, 255, 0.74);
+    border-radius: 12px;
+    background: none;
+    color: rgba(255, 255, 255, 0.74);
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 37px;
+    letter-spacing: 0.075em;
+}
+
+.employ_order_submit:hover {
+    background: rgba(83, 83, 83, 0.3);
+    backdrop-filter: blur(9px);
+}
+
+.employ_roadmap_title{
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 85px;
+    letter-spacing: 0.075em;
+    margin-bottom: 110px;
+}
+.employ_roadmap_box{
+    max-width: 1090px;
+    margin: 0 auto;
+}
+.roadmap_card{
+    display: flex;
+    justify-content: space-between;
+}
+.employ_roadmap_box img{
+    margin: 0 auto;
+}
+.road-map{
+    width: 318px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 31px;
+    text-align: center;
+    background: linear-gradient(90deg, #0172AB 9.75%, #01C097 53.65%, #016F6A 95.75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.inner{
+    padding-top: 40px;
+}
+.inner_bottom{
+    margin-top: 70px;
+}
+.created{
+    position: relative;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.075em;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 100px;
+    padding-bottom: 30px;
+}
+.created_span{
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.075em;
+    color: #FFFFFF;
+    text-decoration: none;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.modal-dialog{
+    max-width: 1000px;
+}
+.modal-content{
+    display: block;
+}
+.modal-header{
+    border-bottom: none;
+}
+.modal-body{
+    text-align: center;
+    color: #000;
+}
+.modal-footer{
+    border-top:none;
+}
+.details:hover{
+    color: #007bff;
+    text-decoration-line: underline;
+}
+
+/* ------------------MODAL-DONE-CHECKED------------------------------------------ */
+.window_order_done,
+.window_order_checked {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(58, 58, 58, 0.7);
+    opacity: 1;
+    z-index: 10000;
+}
+
+.window_checked {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 822px;
+    height: 302px;
+    padding-top: 75px;
+    background-image: url(../images/window_order_checked.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.window_order_close {
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    cursor: pointer;
+}
+
+.window_order_close::after,
+.window_order_close::before {
+    top: 15px;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+}
+
+.window_order_close::after {
+    transform: rotate(45deg);
+}
+
+.window_order_close::before {
+    transform: rotate(-45deg);
+}
+
+.window_checked_text,
+.window_checked_inner {
+    display: block;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(10px);
+    padding: 26px 0 34px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.window_checked_text {
+    max-width: 670px;
+    border-radius: 10px;
+}
+
+.window_checked_inner {
+    border-top: 1px solid #fff;
+    width: 295px;
+    border-radius: 0px 0px 25px 25px;
+}
+
+
+@media(max-width:1105px) {
+    body{
+        background: #000C14;
+    }
+    .menu_item {
+        margin-bottom: 30px;
+    }
+
+    .menu_item:last-child {
+        margin-top: 0;
+    }
+    
+    .employ_roadmap_box{
+        margin-bottom: 40px;
+    }
+    .employ_roadmap_box img{
+        width: 265px;
+        height: 155px;
+
+    }
+    .road-map{
+        font-size: 12px;
+        line-height: 17px;
+    }
+    /* .top{
+        margin-bottom: 155px;
+    } */
+}
+
+@media(max-width:780px) {
+
+
+
+    .created {
+        margin-top: 100px;
+        font-size: 12px;
+        padding-bottom: 10px;
+    }
+
+    .created_span {
+        font-size: 14px;
+
+    }
+
+}
+
+@media(max-width:740px) {
+    .header {
+        padding-top: 25px;
+    }
+
+    .header_box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu {
+        background: #17181B;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100vh;
+        transition: all .5s;
+        z-index: 1;
+    }
+
+    .menu.active {
+        left: 0;
+    }
+
+    .close_btn {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+
+    .close_btn::after,
+    .close_btn::before {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 2px;
+        background-color: #fff;
+    }
+
+    .close_btn::after {
+        transform: rotate(45deg);
+        bottom: 30px;
+        left: 25px;
+    }
+
+    .close_btn::before {
+        transform: rotate(-45deg);
+        bottom: 30px;
+        left: 25px;
+    }
+
+    .menu_list {
+        padding-top: 130px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu_item {
+        margin-bottom: 20px;
+    }
+
+    .menu_button {
+        width: 264px;
+        height: 66px;
+        font-size: 20px;
+        border: transparent;
+        background: rgba(255, 255, 255, 0.04);
+        box-shadow: inset 0px 0px 25px rgba(166, 154, 154, 0.25);
+        backdrop-filter: blur(12px);
+        border-radius: 5px;
+    }
+
+    .menu_btn {
+        width: 30px;
+        height: 20px;
+        position: relative;
+        margin-bottom: 150px;
+    }
+
+    .menu_btn span {
+        position: absolute;
+        width: 80%;
+        height: 2px;
+        background-color: #fff;
+        top: 9px;
+    }
+
+    .menu_btn::after,
+    .menu_btn::before {
+        content: '';
+        position: absolute;
+
+        height: 2px;
+        background-color: #fff;
+    }
+
+    .menu_btn::after {
+        top: 0;
+        width: 100%;
+    }
+
+    .menu_btn::before {
+        bottom: 0;
+        width: 90%;
+    }
+
+    .languages {
+        width: 150px;
+        margin:0 auto 20px;
+        order: 4;
+    }
+
+    .languages_button {
+        font-size: 20px;
+    }
+
+    .header_title {
+        font-size: 30px;
+        order: 1;
+    }
+
+    .header_agency-name {
+        font-size: 30px;
+        margin-bottom: 20px;
+        order: 2;
+    }
+
+    .header_text-info {
+        font-size: 16px;
+        margin-bottom: 40px;
+        order: 3;
+    }
+    .job_box_text{
+        margin-bottom: 5px;
+    }
+
+    
+    .job_offers {
+        font-size: 35px;
+        margin-right: 0;
+    }
+
+    .media_icon {
+        display: none;
+    }
+
+    .jobs_info{
+        margin-bottom: 30px;
+    }
+    .title{
+        font-size: 20px;
+    }
+    .employ_text{
+        font-size: 16px;
+        line-height: 23px;
+    }
+    .employ_order{
+        width: 345px;
+        height: 463px;
+        background-size: 450px 400px;
+        margin-bottom: 70px;
+    }
+    .employ_order_title{
+        text-align: center;
+        font-size: 26px;
+    }
+    .form_question{
+        margin: 0 auto;
+        width: 287px;
+    }
+    .employ_order_input{
+        width: 287px;
+        height: 67px;
+        margin-bottom: 25px;
+    }
+    .employ_order_submit{
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+    .employ_roadmap_title{
+        font-size: 30px;
+        line-height: 42px;
+        margin-bottom: 52px;
+    }
+    .window_checked{
+        width: 360px;
+        height: 230px;
+        padding-top: 60px;
+    }
+    .window_checked_text, .window_checked_inner{
+        font-size: 10px;
+        padding: 20px 0;
+    }
+}
