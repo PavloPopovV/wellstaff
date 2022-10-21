@@ -434,7 +434,7 @@ body {
 .job_card {
     position: relative;
     height: 420px;
-    width: 370px;
+    max-width: 370px;
     margin: 0 auto 50px;
 }
 
@@ -447,35 +447,21 @@ body {
 .front {
     position: relative;
     transform: translateY(0px);
+    z-index: 1;
+    
+}
+
+.job_card_img{
+    position: absolute;
+    width: 345px;
+    height: 355px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    z-index: 1;
+    -webkit-filter: brightness(50%);
+    filter: brightness(50%);
 }
 
-.one {
-    background-image: url(../images/one.png);
-}
-
-.two {
-    background-image: url(../images/two.png);
-}
-
-.three {
-    background-image: url(../images/three.png);
-}
-
-.four {
-    background-image: url(../images/four.png);
-}
-
-.five {
-    background-image: url(../images/five.png);
-}
-
-.six {
-    background-image: url(../images/six.png);
-}
 
 .content_card {
     height: 100%;
@@ -490,6 +476,7 @@ body {
     color: #FFFFFF;
     padding-left: 15px;
     padding-bottom: 15px;
+    position: absolute;
 }
 
 .job_card:hover .front {
@@ -501,16 +488,15 @@ body {
     height: 290px;
     position: relative;
     background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
     transform: translateY(-225px);
 }
 
 .content_card_back {
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .back_title {
@@ -539,7 +525,7 @@ body {
 .book_call {
     text-transform: uppercase;
     text-align: center;
-    margin: 0 auto;
+    margin: 0 auto 10px;
     width: 203px;
     height: 42px;
     text-decoration: none;

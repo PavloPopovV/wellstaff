@@ -324,36 +324,23 @@ body {
     position: relative;
     z-index: 1;
     transform: translateY(0px);
+}
+
+.job_card_img{
+    position: absolute;
+    width: 345px;
+    height: 355px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    -webkit-filter: brightness(50%);
+    filter: brightness(50%);
 }
 
-.one {
-    background-image: url(../images/one.png);
-}
 
-.two {
-    background-image: url(../images/two.png);
-}
-
-.three {
-    background-image: url(../images/three.png);
-}
-
-.four {
-    background-image: url(../images/four.png);
-}
-
-.five {
-    background-image: url(../images/five.png);
-}
-
-.six {
-    background-image: url(../images/six.png);
-}
 
 .title_card {
+    position: absolute;
     font-weight: 900;
     font-size: 32px;
     padding-left: 15px;
@@ -406,7 +393,7 @@ body {
 
 .book_call {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 10px;
     width: 203px;
     text-decoration: none;
     text-align: center;
@@ -430,6 +417,9 @@ body {
 
 .content_card_back {
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .slick-dots {
